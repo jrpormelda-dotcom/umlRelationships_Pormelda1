@@ -1,0 +1,14 @@
+class Book:
+    def __init__(self, title):
+        self.title = title
+
+class Library:
+    def __init__(self, books=None):
+        self.books = books if books else []
+
+b1 = Book("The Hobbit")
+b2 = Book("1984")
+lib = Library([b1, b2])
+
+for b in lib.books:
+    print(b.title)    
